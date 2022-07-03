@@ -10,6 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-content: flex-start;
+  padding-top: 3 rem;
 }
 
 .footer {
@@ -113,4 +115,18 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.mainnav ul{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mainnav ul li{
+  list-style: none;
+    margin: 4px 36px;
+    font-weight: lighter;
+    font-size: large;
+    
 }
