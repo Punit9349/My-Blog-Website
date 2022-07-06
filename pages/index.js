@@ -3,6 +3,8 @@ import Script from 'next/script'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import styles1 from '../styles/Home1.module.css'
+import styles2 from '../styles/Home2.module.css'
 
 export default function Home() {
   return (
@@ -44,12 +46,13 @@ export default function Home() {
           A Blog for Hunting coders by the hunting coder
         </p>
 
-        <div className="blogs">
+        {/* <div className={`${styles1.con} ${styles.con}`}> */}
+        <div>
           <h2>Popular Blogs</h2>
           <div className="blogItem">
             <h3>How to learn javascript in 2022?</h3>
             <p>Javascript is language used to design logic for the web.</p>
-          </div>
+          </div>  
         </div>
 
         <div className="blogs">
