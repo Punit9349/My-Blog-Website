@@ -3,19 +3,13 @@ import Script from 'next/script'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import styles1 from '../styles/Home1.module.css'
-import styles2 from '../styles/Home2.module.css'
-import Dummy from '../components/dummy'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Dummy/>
          <style jsx>
           {`
-          .myspan{
-            color: red;
-          }
+         
           `}
         </style>
       <Head>
@@ -24,7 +18,6 @@ export default function Home() {
         <meta name="keywords" content="next, blog, hunting coder blog, next js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <script src='/sc.js' strategy="lazyOnload"></script> */}
 
       <nav className={styles.mainnav}>
         <ul>
@@ -48,14 +41,15 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <span className='myspan dummy'>Hunting Coder</span>
+          <span className='myspan'>Hunting Coder</span>
         </h1>
+
+        <Image className={styles.myImg} src="/homeimg.jpg" width={237} height={158} />
 
         <p className={styles.description}>
           A Blog for Hunting coders by the hunting coder
         </p>
 
-        {/* <div className={`${styles1.con} ${styles.con}`}> */}
         <div>
           <h2>Popular Blogs</h2>
           <div className="blogItem">
