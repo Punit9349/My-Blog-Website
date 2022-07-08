@@ -3,13 +3,30 @@ import Script from 'next/script'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Navbar from '../components/Navbar'
 
 export default function Home() {
+  const img = "/homeimg2.jpg";
   return (
     <div className={styles.container}>
          <style jsx>
           {`
-         
+              .part1{
+                background-image: url(${img});
+                background-size: cover;
+                padding-top:0px;
+                margin-top:0 px;
+              }
+
+              .title1{
+                padding-top:47px;
+              }
+
+              .blogg{
+                display:flex;
+                justify-content:centre;
+              }
+
           `}
         </style>
       <Head>
@@ -19,8 +36,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className={styles.mainnav}>
+      <Navbar/>
+      {/* <nav className={styles.mainnav}>
         <ul>
+          <Link href='/' >
+             <a><h3 className={styles.logo} >Hunting Coder</h3></a>
+           </Link>
+
           <Link href='/' >
              <a><li>Home</li></a>
            </Link>
@@ -36,22 +58,38 @@ export default function Home() {
           <Link href='/contact' >
             <a><li>Contact</li></a>
            </Link>
+
+          <Link href='/contact' >
+            <a><button className={styles.button}>Login</button></a>
+           </Link>
+
+          <Link href='/contact' >
+            <a><button className={styles.button}>Signup</button></a>
+           </Link>
         </ul>
-      </nav>
+      </nav> */}
+
+      <div className="part1">
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h1 className="title1">
           <span className='myspan'>Hunting Coder</span>
         </h1>
 
-        <Image className={styles.myImg} src="/homeimg.jpg" width={237} height={158} />
+        {/* <Image className={styles.myImg} src="/homeimg.jpg" width={237} height={158} /> */}
 
         <p className={styles.description}>
           A Blog for Hunting coders by the hunting coder
         </p>
 
+        </main>
+
+        </div>
+
+        <div className="blogitem">
+
         <div>
-          <h2>Popular Blogs</h2>
+          <h2 className='blogg'>Popular Blogs</h2>
           <div className="blogItem">
             <h3>How to learn javascript in 2022?</h3>
             <p>Javascript is language used to design logic for the web.</p>
@@ -79,20 +117,21 @@ export default function Home() {
           </div>
         </div>
 
-      </main>
+        </div>
 
-      {/* <footer className={styles.footer}>
+      <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Copyright @ Coding hunters
+          {/* Powered by{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          </span> */}
         </a>
-      </footer> */}
+      </footer>
     </div>
   )
 }
