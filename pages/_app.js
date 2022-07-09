@@ -1,8 +1,11 @@
 import '../styles/globals.css'
-import styles1 from '../styles/Home.modules1.css'
+import Navbar from '../components/Navbar.js'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return <>
+  <Navbar/>
+  <Component {...pageProps} />
+  </>
 }
 
 export default MyApp

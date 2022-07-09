@@ -37,37 +37,6 @@ export default function Home() {
       </Head>
 
       <Navbar/>
-      {/* <nav className={styles.mainnav}>
-        <ul>
-          <Link href='/' >
-             <a><h3 className={styles.logo} >Hunting Coder</h3></a>
-           </Link>
-
-          <Link href='/' >
-             <a><li>Home</li></a>
-           </Link>
-
-          <Link href='/about' >
-             <a><li>About</li></a>
-           </Link>
-
-          <Link href='/blog' > 
-             <a><li>Blog</li> </a>
-          </Link>
-
-          <Link href='/contact' >
-            <a><li>Contact</li></a>
-           </Link>
-
-          <Link href='/contact' >
-            <a><button className={styles.button}>Login</button></a>
-           </Link>
-
-          <Link href='/contact' >
-            <a><button className={styles.button}>Signup</button></a>
-           </Link>
-        </ul>
-      </nav> */}
 
       <div className="part1">
 
