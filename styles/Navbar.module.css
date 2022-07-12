@@ -26,8 +26,8 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   margin-bottom: 0px;
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.4);
   background-color: white;
@@ -63,10 +63,10 @@
     color: white;
     font-weight: 500;
     font-size: larger;
-    padding: 10px 22px;
+    padding: 8px 20px;
     margin: 2px 2px;
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     padding-left: 19px;
     border: 1.8px solid #7E22CE;
     padding-left: 19px;
@@ -75,7 +75,7 @@
 }
 
 .button {
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 
 .button:hover {
@@ -86,7 +86,7 @@
 
 .logo{
   height: 0rem;
-  margin-right: 446px;
+  margin-right: 430px;
   margin-top: 4px;
   font-family: inherit;
   margin-left: -3.5rem;
