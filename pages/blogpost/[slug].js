@@ -5,19 +5,21 @@ import styles from '../../styles/BlogPost.module.css'
 // Step1:- Find the file corresponding to slug.
 // Step2:- Populate them inside the page.
 
-const slug = (props) => {
-  const [blog, setBlog] = useState(props.myBlog);
+const Slug = (props) => {
+  const [Blog, setBlog] = useState(props.myBlog);
   
   return (
+    <>
     <div className={styles.con}>
       <main className={styles.main}>
-            <h1>{blog && blog.title}</h1>
+            <h1>{Blog && Blog.title}</h1>
             <hr />
             <div>
-                {blog && blog.content}
+                {Blog && Blog.content}
             </div>
         </main>
     </div>
+    </>
   )
 }
 
@@ -36,4 +38,4 @@ export async function getServerSideProps(context){
   }
 }
 
-export default slug
+export default Slug
