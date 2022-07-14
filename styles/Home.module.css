@@ -241,3 +241,8 @@
   margin-right: 1160px;
   padding-bottom: 0px;
 }
+
+.blogg{
+  display:flex;
+  justify-content:centre;
+}

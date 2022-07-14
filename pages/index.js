@@ -23,10 +23,6 @@ export default function Home() {
                 padding-top:47px;
               }
 
-              .blogg{
-                display:flex;
-                justify-content:centre;
-              }
 
           `}
         </style>
@@ -68,32 +64,32 @@ export default function Home() {
          
         </div>
 
-        <div className="blogitem">
+        <div className={styles.blogitem}>
 
         <div>
-          <h2 className='blogg'>Popular Blogs</h2>
+          <h2 className={styles.blogg}>Popular Blogs</h2>
           <div className="blogItem">
             <h3>How to learn javascript in 2022?</h3>
             <p>Javascript is language used to design logic for the web.</p>
           </div>  
         </div>
 
-        <div className="blogs">
-          <div className="blogItem">
+        <div className={styles.blog}>
+          <div className={styles.blogitem}>
             <h3>How to learn javascript in 2022?</h3>
             <p>Javascript is language used to design logic for the web.</p>
           </div>
         </div>
 
-        <div className="blogs">
-          <div className="blogItem">
+        <div className={styles.blog}>
+          <div className={styles.blogitem}>
             <h3>How to learn javascript in 2022?</h3>
             <p>Javascript is language used to design logic for the web.</p>
           </div>
         </div>
 
-        <div className="blogs">
-          <div className="blogItem">
+        <div className={styles.blog}>
+          <div className={styles.blogitem}>
             <h3>How to learn javascript in 2022?</h3>
             <p>Javascript is language used to design logic for the web.</p>
           </div>

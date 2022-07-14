@@ -6,7 +6,7 @@ import styles from '../../styles/BlogPost.module.css'
 // Step2:- Populate them inside the page.
 
 const slug = () => {
-  const [blog, setblog] = useState();
+  const [blog, setBlog] = useState();
   const router = useRouter();
   useEffect(() => {
     if(!router.isReady)  return;
@@ -15,7 +15,7 @@ const slug = () => {
       return a.json();
     }).then((parsed)=>{
       console.log(parsed);
-      setblog(parsed);
+      setBlog(parsed);
     })
     
   }, [router.isReady])
