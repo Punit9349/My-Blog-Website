@@ -5,6 +5,7 @@ import styles from '../../styles/BlogPost.module.css'
 // Step1:- Find the file corresponding to slug.
 // Step2:- Populate them inside the page.
 
+
 const Slug = (props) => {
   const [Blog, setBlog] = useState(props.myBlog);
   
