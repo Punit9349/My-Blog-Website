@@ -15,8 +15,8 @@ const Navbar = () => {
              <a><li>Home</li></a>
            </Link>
 
-          <Link href='/about' >
-             <a><li>About</li></a>
+          <Link href='/Courses' >
+             <a><li>Courses</li></a>
            </Link>
 
           <Link href='/blog' > 
@@ -27,11 +27,11 @@ const Navbar = () => {
             <a><li>Contact</li></a>
            </Link>
 
-          <Link href='/contact' >
+          <Link href='/Login' >
             <a><button className={styles1.button}>Login</button></a>
            </Link>
 
-          <Link href='/contact' >
+          <Link href='/Signup' >
             <a><button className={styles1.button}>Signup</button></a>
            </Link>
         </ul>

@@ -1,43 +1,38 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import styles from '../styles/Blog.module.css'
 import Link from "next/link";
 
+// step1:- collect all the files from blog directory.
+// step2:- Iterate through them and display them.
+
 const Blog = () => {
+  const [blogs, setblogs] = useState([]);
+  useEffect(() => {
+    console.log("use effect is running");
+    fetch('http://localhost:3000/api/blogs').then((a)=>{
+      return a.json();
+    }).then((parsed)=>{
+      console.log(parsed);
+      setblogs(parsed);
+    })
+    
+  }, [])
+  
   return (
     <>
       <div className={styles.con}>
           <h2 className="blogg">Popular Blogs</h2>
 
-          <div className={styles.blogItem}>
-            <Link href={'/blogpost/blog1'}>
-            <h3>How to learn javascript in 2022?</h3>
+          {blogs.map((blogitem)=>{
+            return  <div key={blogitem.slug} className={styles.blogItem}>
+            <Link href={`/blogpost/${blogitem.slug}`}>
+            <h3>{blogitem.title}</h3>
             </Link>
-            <p>Javascript is language used to design logic for the web.</p>
+            <p>{blogitem.content.substr(0,140)}...</p>
          </div>
-
-          <div className={styles.blogItem}>
-            <Link href={'/blogpost/blog2'}>
-            <h3>How to learn javascript in 2022?</h3>
-            </Link>
-            <p>Javascript is language used to design logic for the web.</p>
-         </div>
-
-          <div className={styles.blogItem}>
-            <Link href={'/blogpost/blog3'}>
-            <h3>How to learn javascript in 2022?</h3>
-            </Link>
-            <p>Javascript is language used to design logic for the web.</p>
-         </div>
-
-          <div className={styles.blogItem}>
-            <Link href={'/blogpost/blog4'}>
-            <h3>How to learn javascript in 2022?</h3>
-            </Link>
-            <p>Javascript is language used to design logic for the web.</p>
-         </div>
+          })}
 
 
-         
       </div>
     </>
   );

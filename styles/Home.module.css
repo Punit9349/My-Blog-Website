@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: flex-start;
   padding-top: 3 rem;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0);
  
 }
 
@@ -197,13 +198,14 @@
 .quote{
    width: 98.7vw;
    margin: none;
-   height: 33vh;
+   height: 46vh;
    background-color: #f7f7f8cc;
    display: flex;
    align-items: center;
    justify-content: center;
    flex-direction: column;
    box-shadow: 0 2px 2px -2px rgba(0,0,0,.4);
+   padding-bottom: 34px;
 }
 
 .quotetxt{
@@ -212,7 +214,11 @@
     width: 78vw;
     align-items: center;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 330;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    margin-top: 0px;
     /* font-family: sans-serif; */
 }
 .quotetxt1{
@@ -222,5 +228,16 @@
     align-items: center;
     font-size: medium;
     margin-top: -16px;
+   
 
+}
+
+.iconq{
+  height: 39px;
+  width: 62px;
+  margin: 34px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-right: 1160px;
+  padding-bottom: 0px;
 }
