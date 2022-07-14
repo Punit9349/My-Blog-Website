@@ -56,8 +56,8 @@ export default function Home() {
         
         <div className={styles.quote}>
         {/* <i className="fa-solid fa-quote-left" ></i> */}
-        <img src="/quoteicon1.png" className={styles.iconq} />
-          <p className={styles.quotetxt}>"Coding is today's language of creativity. All our children deserve a chance to become creators instead consumers of computer science"
+        <picture><img src="/quoteicon1.png" alt="" className={styles.iconq} /></picture>
+          <p className={styles.quotetxt}>Coding is today language of creativity. All our children deserve a chance to become creators instead consumers of computer science.
           </p>
 
           <p className={styles.quotetxt1}>-Maria Klawe</p>

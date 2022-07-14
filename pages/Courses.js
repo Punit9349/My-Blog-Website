@@ -8,7 +8,7 @@ const Courses = () => {
       <div className={styles.course}>
 
       <div className={styles.card}>
-      <img className={styles.myImg} src="/homeimg.jpg" width="345px" height="213px"/>
+      <picture><img className={styles.myImg} src="/homeimg.jpg" alt="" width="345px" height="213px"/></picture>
       <div className={styles.container}>
         <h4><b>How to learn javascript in 2022</b></h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sequi illo sed qui provident perferendis ab consequatur incidunt repellat.</p>
@@ -17,7 +17,7 @@ const Courses = () => {
       </div>
 
       <div className={styles.card}>
-      <img className={styles.myImg} src="/homeimg1.jpg" width={345} height={213} />
+      <picture><img className={styles.myImg} src="/homeimg1.jpg" alt="" width={345} height={213} /></picture>
       <div className={styles.container}>
         <h4><b>John Doe</b></h4>
         <p>Architect & Engineer</p>
@@ -26,7 +26,7 @@ const Courses = () => {
       </div>
 
       <div className={styles.card}>
-      <img className={styles.myImg} src="/homeimg2.jpg" width={345} height={213} />
+      <picture><img className={styles.myImg} src="/homeimg2.jpg" alt="" width={345} height={213} /></picture>
       <div className={styles.container}>
         <h4><b>John Doe</b></h4>
         <p>Architect & Engineer</p>
@@ -35,7 +35,7 @@ const Courses = () => {
       </div>
 
       <div className={styles.card}>
-      <img className={styles.myImg} src="/homeimg1.jpg" width={345} height={213} />
+      <picture><img className={styles.myImg} src="/homeimg1.jpg" alt="" width={345} height={213} /></picture>
       <div className={styles.container}>
         <h4><b>John Doe</b></h4>
         <p>Architect & Engineer</p>
@@ -44,7 +44,7 @@ const Courses = () => {
       </div>
 
       <div className={styles.card}>
-      <img className={styles.myImg} src="/homeimg1.jpg" width={345} height={213} />
+      <picture><img className={styles.myImg} src="/homeimg1.jpg" alt="" width={345} height={213} /></picture>
       <div className={styles.container}>
         <h4><b>John Doe</b></h4>
         <p>Architect & Engineer</p>
