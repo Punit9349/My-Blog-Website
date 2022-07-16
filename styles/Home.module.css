@@ -6,6 +6,7 @@
 
 .main {
   min-height: 75vh;
+  margin-top: 80px;
   padding: 4rem 0;
   flex: 1;
   display: flex;
