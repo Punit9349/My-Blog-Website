@@ -46,7 +46,7 @@ export default function Home() {
           A Blog for helping coders community by providing our services and easy to understand blogs.
         </p>
 
-        <a><button className={styles.button}>Let's Start</button></a>
+        <a><button className={styles.button}>Lets Start</button></a>
 
       </main>
 
