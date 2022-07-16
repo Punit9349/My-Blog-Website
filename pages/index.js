@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import Script from 'next/script'
-import Link from 'next/link'
-import Image from 'next/image'
+// import Script from 'next/script'
+// import Link from 'next/link'
+// import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
+import Popular from '../components/Popular';
 
 export default function Home() {
   const img = "/homeimg2.jpg";
@@ -22,8 +23,6 @@ export default function Home() {
               .title1{
                 padding-top:47px;
               }
-
-
           `}
         </style>
       <Head>
@@ -32,70 +31,37 @@ export default function Home() {
         <meta name="keywords" content="next, blog, hunting coder blog, next js" />
         <link rel="icon" href="/favicon.ico" />
         {/* <script src="https://kit.fontawesome.com/004c7e6d5b.js" crossorigin="anonymous"></script> */}
-        {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/> */}
       </Head>
-      {/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> */}
+   
       <Navbar/>
 
       <div className="part1">
 
       <main className={styles.main}>
         <h1 className="title1">
-          <span className='myspan'>Hunting Coder</span>
+          <span className='myspan'>TechnoBlogs</span>
         </h1>
 
-        {/* <Image className={styles.myImg} src="/homeimg.jpg" width={237} height={158} /> */}
-
         <p className={styles.description}>
-          A Blog for Hunting coders by the hunting coder
+          A Blog for helping coders community by providing our services and easy to understand blogs.
         </p>
 
-        </main>
+        <a><button className={styles.button}>Let's Start</button></a>
+
+      </main>
 
         </div>
         
         <div className={styles.quote}>
-        {/* <i className="fa-solid fa-quote-left" ></i> */}
         <picture><img src="/quoteicon1.png" alt="" className={styles.iconq} /></picture>
           <p className={styles.quotetxt}>Coding is today language of creativity. All our children deserve a chance to become creators instead consumers of computer science.
           </p>
 
           <p className={styles.quotetxt1}>-Maria Klawe</p>
-         
         </div>
 
-        <div className={styles.blogitem}>
 
-        <div>
-          <h2 className={styles.blogg}>Popular Blogs</h2>
-          <div className="blogItem">
-            <h3>How to learn javascript in 2022?</h3>
-            <p>Javascript is language used to design logic for the web.</p>
-          </div>  
-        </div>
-
-        <div className={styles.blog}>
-          <div className={styles.blogitem}>
-            <h3>How to learn javascript in 2022?</h3>
-            <p>Javascript is language used to design logic for the web.</p>
-          </div>
-        </div>
-
-        <div className={styles.blog}>
-          <div className={styles.blogitem}>
-            <h3>How to learn javascript in 2022?</h3>
-            <p>Javascript is language used to design logic for the web.</p>
-          </div>
-        </div>
-
-        <div className={styles.blog}>
-          <div className={styles.blogitem}>
-            <h3>How to learn javascript in 2022?</h3>
-            <p>Javascript is language used to design logic for the web.</p>
-          </div>
-        </div>
-
-        </div>
+      <Popular/>
 
       <footer className={styles.footer}>
         <a
@@ -103,11 +69,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Copyright @ Coding hunters
-          {/* Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span> */}
+          Copyright @ TechnoBlogs
         </a>
       </footer>
     </div>
