@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-// import{useNavigate} from 'react-router-dom'
 import { useRouter } from 'next/router'
 import styles from '../styles/Signup.module.css'
 
@@ -27,7 +26,7 @@ const Signup = () => {
         if(json.success){
           // save the auth token and redirect
           localStorage.setItem('token', json.authToken);
-          router.push("/");
+          router.push("/login");
           // props.showAlert("Account created successfully", "success")
         } else{
           //  props.showAlert("Invalid Credentials", "danger")
