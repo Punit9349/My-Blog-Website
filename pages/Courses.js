@@ -10,7 +10,7 @@ const Courses = () => {
       <div className={styles.card}>
       <picture><img className={styles.myImg} src="/homeimg.jpg" alt="" width="345px" height="213px"/></picture>
       <div className={styles.container}>
-        <h4><b>How to learn javascript in 2022</b></h4>
+        <h4><b>Dynamic Programming</b></h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sequi illo sed qui provident perferendis ab consequatur incidunt repellat.</p>
         <a><button className={styles.button}>Read More</button></a>
       </div>
@@ -19,8 +19,8 @@ const Courses = () => {
       <div className={styles.card}>
       <picture><img className={styles.myImg} src="/homeimg1.jpg" alt="" width={345} height={213} /></picture>
       <div className={styles.container}>
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
+        <h4><b>Recursion</b></h4>
+        <p>We will cover all important patterns and questions of recursion in this course with proper codes of all problems.</p>
         <a><button className={styles.button}>Read More</button></a>
       </div>
       </div>
@@ -28,7 +28,7 @@ const Courses = () => {
       <div className={styles.card}>
       <picture><img className={styles.myImg} src="/homeimg2.jpg" alt="" width={345} height={213} /></picture>
       <div className={styles.container}>
-        <h4><b>John Doe</b></h4>
+        <h4><b>Sliding window theoram</b></h4>
         <p>Architect & Engineer</p>
         <a><button className={styles.button}>Read More</button></a>
       </div>

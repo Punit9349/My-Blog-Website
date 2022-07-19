@@ -67,3 +67,9 @@
     -ms-hyphens: none;
     hyphens: none;
 }
+
+.codebox{
+    display: flex;
+    background-color: #272822;
+    color: #f8f8f2;
+}

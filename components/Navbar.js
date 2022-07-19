@@ -6,10 +6,10 @@ const Navbar = () => {
   return (
     <div>
          <nav className={styles1.mainnav}>
-        <ul>
           <Link href='/' >
              <a><h3 className={styles1.logo} >TechnoBlogs</h3></a>
            </Link>
+        <ul>
 
           <Link href='/' >
              <a><li>Home</li></a>

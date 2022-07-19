@@ -32,12 +32,14 @@ const blog1 = () => {
              <a className={styles.link}>https://practice.geeksforgeeks.org/problems/nth-fibonacci-number1335/1</a>
         </Link>
         </div>
+
         <p><b>Problem Statement:-</b> Given a positive integer n, find the nth fibonacci number. Since the answer can be very large, return the answer modulo 1000000007.</p>
         <p>we can solve this problem by both approaches, Memoization and tabulation.</p>
         <p style={{fontSize: 22}}>Memoization code:-</p>
-     
       
+        <div className={styles.codebox}>
         <p>class Solution {'{'}<br />public:<br /><br />long long int nthFibonacci(long long int n){'{'}<br />int m=1000000007;<br />long long int a=0;<br />long long int b=1;<br />long long int c,i;<br />if(n==0){'{'}<br />return a;<br />{'}'}<br /><br />for(i=2;i&lt;=n;i++){'{'}<br />c=a%m+b%m;<br />a=b;<br />b=c;<br />{'}'}<br /><br />return b%m;<br />{'}'}<br /><br />{'}'};</p>
+        </div>
 
 
         </div>
