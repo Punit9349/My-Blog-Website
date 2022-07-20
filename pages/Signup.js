@@ -39,6 +39,9 @@ const Signup = () => {
       }
   return (
     <div className={styles.con}>
+    <div className={styles.signimg}>
+        <picture><img src="/signimg1.jpg" alt="" className={styles.imgs} /></picture>
+    </div>
     <div className={styles.signup}>
       <h1 className={styles.h1}>Create account</h1>
       <p className={styles.p}>Please fill in this form to create an account.</p>
@@ -67,9 +70,9 @@ const Signup = () => {
 
           {/* <p>Already have an account?</p> */}
        
+        <button type="submit" className={styles.button}>Submit</button>
         </div>
 
-        <button type="submit" className={styles.button}>Submit</button>
       </form>
     </div>
     </div>
