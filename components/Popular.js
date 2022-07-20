@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Popular = () => {
   return (
-    <div>
+    <div className={styles.div1}>
 
           <h2 className={styles.blogg}>Popular Blogs</h2>
           <div className={styles.course}>

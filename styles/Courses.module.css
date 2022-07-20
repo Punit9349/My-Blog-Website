@@ -1,7 +1,13 @@
 
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .course{
      display: grid;
-     column-gap: 34px;
+     column-gap: 60px;
      row-gap: 57px;
      margin-top: 50px;
      grid-template-columns: 1fr 1fr 1fr;
@@ -23,7 +29,8 @@
 }
 
 .h2{
-  margin-top: 100px;
+  margin-top: 110px;
+  margin-bottom: 0px;
   display: flex;
   justify-content: center;
   font-size:29px;
@@ -37,7 +44,6 @@
     width: 345px;
     display: flex;
     flex-direction: column;
-    margin-left: 27px;
     border-radius: 14px;
   }
   
