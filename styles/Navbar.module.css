@@ -18,6 +18,10 @@
 
 }
 
+#icon{
+  display: none;
+}
+
 .mainnav ul{
   display: flex;
   justify-content: flex-end;
@@ -83,14 +87,17 @@
   border: 1.8px solid #7E22CE;
 }
 
-.logo{
-  font-family: inherit;
-  margin-top: 27px;
-  margin-bottom: 0px; 
-  margin-left: 38px;
-  display: flex;
-  align-items: center;
-  color: #7E22CE;
+@media screen and (min-width:600px){
+  
+  .logo{
+    font-family: inherit;
+    margin-top: 27px;
+    margin-bottom: 0px; 
+    margin-left: 38px;
+    display: flex;
+    align-items: center;
+    color: #7E22CE;
+  }
 }
 
 @media screen and (max-width:600px) {
@@ -104,10 +111,11 @@
     padding-top: 21px;
     padding-bottom: 21px;
     margin-bottom: 0px;
+    display: none;
   }
 
   .mainnav ul li{
-    list-style: none;
+      list-style: none;
       margin: 7px 10px;
       font-weight: 400;
       font-size: 16px;
@@ -115,6 +123,36 @@
       padding-right: 4px;
       font-family: inherit;
       color: rgb(0, 0, 0);
+      display: none;
   }
+
+  #icon{
+    display: flex;
+    align-items: center;
+    color: #7E22CE;
+    margin-right: 18px;
+  }
+  
+  .mainnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.4);
+    background-color: white;
+    /* padding-top: 27px;
+    padding-bottom: 27px; */
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-family: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    color: #7E22CE;
+  }
+
   
 }

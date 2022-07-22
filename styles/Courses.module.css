@@ -9,7 +9,7 @@
      display: grid;
      column-gap: 60px;
      row-gap: 57px;
-     margin-top: 50px;
+     margin-top: 40px;
      grid-template-columns: 1fr 1fr 1fr;
      margin-bottom: 39px;
 }
@@ -100,3 +100,20 @@
   margin-left: -3.5rem;
   color: #7E22CE;
 }
+
+
+@media screen and (max-width:391px) {
+  .myImg{
+     border-radius: 14px 14px 0 0;
+     width: 311px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 311px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+  }
+ }

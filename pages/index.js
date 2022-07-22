@@ -17,7 +17,7 @@ export default function Home() {
                 background-image: url(${img});
                 background-size: cover;
                 padding-top:0px;
-                margin-top:60px;
+                margin-top:50px;
                 box-shadow: 0 2px 2px -2px rgba(0,0,0,.4);
               }
 

@@ -11,10 +11,11 @@
     display: grid;
     column-gap: 60px;
     row-gap: 57px;
-    margin-top: 50px;
+    margin-top: 35px;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 39px;
 }
+
 
 @media screen and (max-width:600px) {
   .course{
@@ -26,6 +27,7 @@
     margin-bottom: 39px;
     width: fit-content;
 }
+
 }
 
 .h2{
@@ -82,13 +84,13 @@
  @media screen and (max-width:391px) {
   .myImg{
      border-radius: 14px 14px 0 0;
-     width: 290px;
+     width: 308px;
   }
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    max-width: 290px;
+    max-width: 308px;
     display: flex;
     flex-direction: column;
     align-items: center;

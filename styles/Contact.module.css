@@ -8,6 +8,7 @@
     /* background-color: aqua; */
 }
 
+
 .form{
     display: flex;
     flex-direction: column;
@@ -61,8 +62,27 @@
 
 .button {
     transition-duration: 0.4s;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #7e22cea0; 
-  }
+}
+
+@media screen and (max-width:470px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        min-width: 70vw;
+        /* margin-left: 311px; */
+        margin-top: -5px;
+     
+        /* background-color: aqua; */
+    }
+
+    .textarea1{
+        margin-left: 10px;
+        height: 115px;
+        width: 65vw;
+        /* padding-right: 13px; */
+    }
+}
