@@ -26,7 +26,7 @@ const Navbar = () => {
              <a><li>Courses</li></a>
            </Link>
 
-          <Link href='/blog' > 
+          <Link href='/latestblogs' > 
              <a><li>Blog</li> </a>
           </Link>
 
