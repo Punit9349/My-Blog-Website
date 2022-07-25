@@ -51,6 +51,7 @@
     border-radius: 5px;
 }
 
+
 .boxd{
     padding: 1rem;
     width: 265px;
@@ -58,4 +59,37 @@
     outline: none;
     box-sizing: border-box;
     border-radius: 5px;
+}
+
+@media screen and (max-width:420px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 640px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .myImg{
+        width:340px
+    }
+
+    .boxd{
+        width:340px
+    }
+}
+
+@media (min-width: 640px) and (max-width: 920px) {
+    .container{
+        display: grid;
+        column-gap: 50px;
+        row-gap: 40px;
+        margin-top: 40px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }
