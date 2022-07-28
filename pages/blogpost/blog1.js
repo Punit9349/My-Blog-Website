@@ -4,9 +4,10 @@ import Link from 'next/link'
 
 const blog1 = () => {
   return (
-    <div>
+    <div className={styles.body}>
         <div className={styles.container}>
         <h1>DP-1</h1>
+        
         <h2>Program for Fibonacchi numbers using dynamic programming.</h2>
         <p>The Fibonacci numbers are the numbers in the following integer sequence.<br/>
         0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ……..</p>

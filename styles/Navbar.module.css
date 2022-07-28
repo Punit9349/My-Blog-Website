@@ -15,9 +15,7 @@
 #icon{
   display: none;
 }
-#icon1{
-  display: none;
-}
+
 
 .mainnav ul{
   display: flex;
@@ -135,12 +133,12 @@
   .mainnav ul[data-visible='true']{
       transform: translateX(0%);
   }
-  #icon[data-visible='true']{
+  /* #icon[data-visible='true']{
       transform: translateX(0%);
   }
   #icon1[data-visible='true']{
       transform: translateX(0%);
-  }
+  } */
 
    /* .mainnav  button{
       list-style: none;
@@ -170,13 +168,13 @@
     margin-right: 10px;
     z-index: 9999;
   }
-  #icon1{
+  /* #icon1{
     display: flex;
     align-items: center;
     color: #7E22CE;
     margin-right: 18px;
     z-index: 9999;
-  }
+  } */
   
   .mainnav{
     display: flex;

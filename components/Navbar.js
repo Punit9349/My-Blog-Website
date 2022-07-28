@@ -7,7 +7,7 @@ import styles1 from '../styles/Navbar.module.css'
 const Navbar = () => { 
    
       const [boola, setboola] = useState(false);
-      const [func, setfunc] = useState("flex");
+      const [func, setfunc] = useState("");
       const [func1, setfunc1] = useState("none");
       console.log(func1);
       const onChange=()=>{
@@ -18,8 +18,8 @@ const Navbar = () => {
 
       const onChange1=()=>{
         setboola(false);
-        setfunc1('flex');
-        setfunc('none');
+        setfunc('flex');
+        setfunc1('none');
       }
       return (
         <div>
@@ -57,8 +57,8 @@ const Navbar = () => {
            </Link>
 
          </div>  
-           <i className="fa-solid fa-bars fa-xl" id={styles1.icon} onClick={onChange} style={{display:{func}}}></i>
-           <i className="fa-solid fa-xmark fa-2xl" id={styles1.icon1} onClick={onChange1} style={{display :{func1}}}></i>
+           <i className="fa-solid fa-bars fa-xl" id={styles1.icon} onClick={onChange} style={{display:func}}></i>
+           <i className="fa-solid fa-xmark fa-2xl" id={styles1.icon} onClick={onChange1} style={{display :func1}}></i>
       </nav>
     </div>
   )
