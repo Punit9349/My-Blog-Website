@@ -30,7 +30,7 @@ const blog1 = () => {
         <div className={styles.box}>
         <h4>Problem Link:-</h4>
         <Link href='https://practice.geeksforgeeks.org/problems/nth-fibonacci-number1335/1' >
-             <a className={styles.link}>https://practice.geeksforgeeks.org/problems/nth-fibonacci-number1335/1</a>
+             <a className={styles.link} target='_blank'>  https://nth-fibonacci-number1335/1</a>
         </Link>
         </div>
 

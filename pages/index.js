@@ -41,7 +41,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          A Blog for helping coders community by providing our services and easy to understand blogs.
+          A Blog website for helping coders community by providing our services and easy to understand blogs.
         </p>
 
         <a><button className={styles.button}>Lets Start</button></a>

@@ -11,9 +11,9 @@ const latestblogs = () => {
           <Link href='/blogpost/blog1'>
             <div className={styles.blog}>
             
-                <picture><img className={styles.myImg} src="/homeimg2.jpg" alt="" /></picture>
+                <picture><img className={styles.myImg} src="/restapi.png" alt="" /></picture>
                 <div className={styles.boxd}>
-                <h4><b>Lets build a sorting visualizer using react</b></h4>
+                <h4><b>Rest API in javascript</b></h4>
                 </div>
 
             </div>
