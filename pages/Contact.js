@@ -23,8 +23,8 @@ const Contact = () => {
         
         const json= await response.json();
         console.log(json);
-        router.push("/");
         if(json.success){
+          router.push("/");
           // save the auth token and redirect
           // localStorage.setItem('token', json.authToken);
           // router.push("/");

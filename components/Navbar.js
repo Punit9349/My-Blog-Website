@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import {useState} from 'react'
+import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import styles1 from '../styles/Navbar.module.css'
 
@@ -10,6 +11,8 @@ const Navbar = () => {
       const [boola, setboola] = useState(false);
       const [func, setfunc] = useState("");
       const [func1, setfunc1] = useState("none");
+      const [logg, setlogg] = useState("none");
+      const [logg1, setlogg1] = useState("");
       console.log(func1);
       const onChange=()=>{
          setboola(true);
@@ -22,15 +25,22 @@ const Navbar = () => {
         setfunc('flex');
         setfunc1('none');
       }
-
       const handleLogout=()=>{
         localStorage.removeItem('token');
         router.push('/Login');
-      }
+        setlogg('none');
+        setlogg1('flex');
+      }      
 
-
+      useEffect(() => {
+        if(localStorage.getItem('token')){
+          setlogg('flex');
+          setlogg1('none');
+        }
       
-
+      
+      }, )
+      
       return (
         <div>
           <nav className={styles1.mainnav}  >
@@ -58,30 +68,22 @@ const Navbar = () => {
 
         </ul>
         <div className={styles1.bumton}> 
+          <button style={{display:logg}} className={styles1.button} onClick={handleLogout} id={styles1.button2}>Logout</button>
           <Link href='/Login' >
-            <a><button className={styles1.button}>Login</button></a>
+            <a><button style={{display:logg1}} className={styles1.button}>Login</button></a>
            </Link>
 
           <Link href='/Signup' >
-            <a><button className={styles1.button} id={styles1.button2}>Signup</button></a>
-           </Link>
-
-      {/* { !localStorage.getItem('token')? <>
-          <Link href='/Login' >
-            <a><button className={styles1.button}>Login</button></a>
-           </Link>
-
-          <Link href='/Signup' >
-            <a><button className={styles1.button} id={styles1.button2}>Signup</button></a>
-           </Link>
-           </>: <button className={styles1.button} onClick={handleLogout} id={styles1.button2}>Logout</button>} */}
+            <a><button style={{display:logg1}} className={styles1.button} id={styles1.button2}>Signup</button></a>
+           </Link> 
 
          </div>  
+          
            <i className="fa-solid fa-bars fa-xl" id={styles1.icon} onClick={onChange} style={{display:func}}></i>
            <i className="fa-solid fa-xmark fa-2xl" id={styles1.icon} onClick={onChange1} style={{display :func1}}></i>
       </nav>
     </div>
   )
-}
+ }
 
 export default Navbar
