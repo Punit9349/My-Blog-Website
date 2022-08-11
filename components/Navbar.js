@@ -62,9 +62,14 @@ const Navbar = () => {
              <a><li>Blog</li> </a>
           </Link>
 
+          {/* <Link href='/notes' >
+            <a><li>Notes</li></a>
+           </Link> */}
+
           <Link href='/Contact' >
             <a><li>Contact</li></a>
            </Link>
+
 
         </ul>
         <div className={styles1.bumton}> 

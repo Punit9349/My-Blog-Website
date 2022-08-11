@@ -28,8 +28,8 @@ const Courses = () => {
       <div className={styles.card}>
       <picture><img className={styles.myImg} src="/homeimg2.jpg" alt="" width={345} height={213} /></picture>
       <div className={styles.container}>
-        <h4><b>Sliding window theoram</b></h4>
-        <p>Architect & Engineer</p>
+        <h4><b>Binary Tree</b></h4>
+        <p>All major binary tree topics covered with proper explanation.</p>
         <a><button className={styles.button}>Read More</button></a>
       </div>
       </div>

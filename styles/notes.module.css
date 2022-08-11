@@ -1,0 +1,14 @@
+.pdf{
+    width:100%;
+    height: calc(100vh - 78px);
+    border:none;
+    margin-top:78px
+}
+
+.pop{
+    /* background-color: rgb(225, 197, 161); */
+    padding-top: 200px;
+    /* margin: 0px; */
+    /* width: 40px; */
+    /* height: 42px; */
+}
